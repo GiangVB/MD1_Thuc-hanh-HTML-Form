@@ -7,6 +7,24 @@
         .wufoo {
             font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
         }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        textarea {
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            padding: 8px;
+        }
+        th {
+            text-align: center;
+        }
+        tr:nth-child(odd) {
+            background-color: #dddddd;
+        }
     </style>
 </head>
 <body>
@@ -46,7 +64,40 @@
             <label><input type="text" size="10">Dollars</label>
             <label><input type="text" size="1">Cents</label>
         <h4>What features would you like to see in the new product.</h4>
-        <textarea> </textarea>
+        <textarea rows="5"> </textarea>
+        <h4>Please rate your level of agreement with the following statements.</h4>
+        <table>
+            <tr>
+                <th></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr>
+                <td>Our products are priced fairly.</td>
+                <td style="text-align: center"><input type="radio" name="price" value="1"></td>
+                <td style="text-align: center"><input type="radio" name="price" value="2"></td>
+                <td style="text-align: center"><input type="radio" name="price" value="3"></td>
+                <td style="text-align: center"><input type="radio" name="price" value="4"></td>
+            </tr>
+            <tr>
+                <td>Our products are high quality.</td>
+                <td style="text-align: center"><input type="radio" name="qlt" value="1"></td>
+                <td style="text-align: center"><input type="radio" name="qlt" value="2"></td>
+                <td style="text-align: center"><input type="radio" name="qlt" value="3"></td>
+                <td style="text-align: center"><input type="radio" name="qlt" value="4"></td>
+            </tr>
+            <tr>
+                <td>You would recommend our product to a friend or coworker.</td>
+                <td style="text-align: center"><input type="radio" name="rec" value="1"></td>
+                <td style="text-align: center"><input type="radio" name="rec" value="2"></td>
+                <td style="text-align: center"><input type="radio" name="rec" value="3"></td>
+                <td style="text-align: center"><input type="radio" name="rec" value="4"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
