@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>survey</title>
+    <style>
+        .wufoo {
+            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form class="wufoo">
+        <h1>Market Research Survey</h1>
+        <p>Please take a few moments to complete this satisfaction survey.</p>
+        <h4>What is your age range?</h4>
+            <select name="agerange" id="selectagerange">
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-50">35-50</option>
+                <option value="50+">50+</option>
+            </select>
+        <h4>What is your yearly income range?</h4>
+            <select name="income" id="selectincome">
+                <option value="0-25000usd">&#36 0 - &#36 25,000</option>
+                <option value="25001-50000usd">&#36 25,001 - &#36 50,000</option>
+                <option value="50001-100000usd">&#36 50,001 - &#36 100,000</option>
+                <option value="100000+usd">&#36 100,000+</option>
+            </select>
+        <h4>Gender Identity</h4>
+            <label><input type="radio" name="gender" value="male">Male</label> <br>
+            <label><input type="radio" name="gender" value="female">Female</label> <br>
+            <label><input type="radio" name="gender" value="nonbi">Nonbinary</label> <br>
+            <label><input type="radio" name="gender" value="other">Other</label> <br>
+            <input type="text" name="gender">
+        <h4>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h4>
+            <label><input type="checkbox" name="product" value="1">Product 1</label> <br>
+            <label><input type="checkbox" name="product" value="2">Product 2</label> <br>
+            <label><input type="checkbox" name="product" value="3">Product 3</label> <br>
+        <h4>How often would you use our new product?</h4>
+            <label><input type="radio" name="freq" value="day">Daily</label> <br>
+            <label><input type="radio" name="freq" value="week">Weekly</label> <br>
+            <label><input type="radio" name="freq" value="month">Monthly</label> <br>
+        <h4>What would you pay for the new product?</h4>
+            &#36
+            <label><input type="text" size="10">Dollars</label>
+            <label><input type="text" size="1">Cents</label>
+        <h4>What features would you like to see in the new product.</h4>
+        <textarea> </textarea>
+    </form>
+</body>
+</html>
